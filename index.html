@@ -44,16 +44,16 @@
         class="min-h-screen flex items-center pt-20 pb-16 relative overflow-hidden bg-gradient-to-r from-purple-50">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto text-center">
-                <h1 class="text-4xl md:text-6xl font-bold mb-10"><span
+                <h1 class="text-4xl md:text-6xl font-bold mb-10 delay-[300ms] duration-[1000ms] taos:translate-x-[-100%] taos:opacity-0" data-taos-effset="300"><span
                         class="bg-gradient-to-r from-purple-900 via-sky-500 to-blue-500 bg-clip-text text-transparent">The
                         Creative
                         <span
                             class="bg-gradient-to-tr from-orange-500 to-orange-300 bg-clip-text text-transparent">Graphic
                             Designer</span> For Digital Brands</span></h1>
-                <p class="text-base sm:text-2xl text-gray-600 font-medium mb-10">Crafting <strong>high-impact
+                <p class="text-base sm:text-2xl text-gray-600 font-medium mb-10 delay-[300ms] duration-[1000ms] taos:translate-x-[100%] taos:opacity-0" data-taos-effset="300">Crafting <strong>high-impact
                         visuals</strong> with a
                     focus on storytelling, branding, and user engagement</p>
-                <div class="flex flex-col sm:flex-row justify-center gap-4 w-full">
+                <div class="flex flex-col sm:flex-row justify-center gap-4 w-full delay-[300ms] duration-[1000ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
                     <a href="projects.html" class="px-4 py-2 bg-purple-900 text-white rounded-sm font-bold">View Projects</a>
                     <a href="getstart.html"
                         class="px-4 py-2 border border-purple-900 hover:bg-purple-900 hover:text-white duration-300 rounded-sm font-bold">Get
@@ -275,8 +275,13 @@
             mobileMenu.classList.toggle('flex');
         });
 
+        taos.init();
+
     </script>
 
+
+
+    <script src="https://cdn.jsdelivr.net/npm/taos@1.0.3/dist/taos.min.js"></script>
 
 </body>
 
