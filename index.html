@@ -14,10 +14,22 @@
     <!-- Nav Bar -->
 
     <div class="fixed w-full top-0 z-50 bg-white/95 backdrop:blur-sm shadow-sm">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <h1 class="textxl md:text-2xl font-bold">FAHED</h1>
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center relative z-10">
+            <h1 class="text-xl md:text-2xl font-bold">FAHED</h1>
 
             <div class="space-x-8 hidden md:block">
+                <a href="#home" class="hover:text-purple-500 duration-300">Home</a>
+                <a href="#about" class="hover:text-purple-500 duration-300">About Me</a>
+                <a href="#skills" class="hover:text-purple-500 duration-300">Skills</a>
+                <a href="#Services" class="hover:text-purple-500 duration-300">Services</a>
+            </div>
+
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-xl"><i class="fa-solid fa-bars"></i></button>
+            </div>
+
+            <div id="mobile-menu"
+                class="hidden w-full p-6 bg-white/95 backdrop:blur-sm flex-col items-center justify-center space-y-4 absolute top-full left-0 shadow-lg md:hidden">
                 <a href="#home" class="hover:text-purple-500 duration-300">Home</a>
                 <a href="#about" class="hover:text-purple-500 duration-300">About Me</a>
                 <a href="#skills" class="hover:text-purple-500 duration-300">Skills</a>
@@ -101,7 +113,7 @@
             </p>
         </div>
 
-        <div class="container mx-auto px-4 sm:pl-0 flex flex-col sm:flex-row justify-between items-center gap-10">
+        <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center gap-10">
             <div class="w-80 sm:w-2/4">
                 <div class="p-4 flex flex-col justify-center gap-2 relative">
                     <div class="flex items-center gap-2">
@@ -247,6 +259,23 @@
             <h1 class="font-bold">Mr.Fahed Designer</h1>
         </div>
     </div>
+
+
+
+
+
+
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+        });
+
+    </script>
 
 
 </body>
