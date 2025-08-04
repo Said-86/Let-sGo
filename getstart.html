@@ -12,31 +12,45 @@
 <body>
 
     <section class="relative min-h-screen flex items-center">
-        
+
 
         <div class="container mx-auto px-4 flex justify-center">
             <div class="w-96 flex flex-col gap-4">
-                <form action="https://formsubmit.co/saidhadji620@gmail.com" method="POST" class="flex flex-col gap-4">
+                <h1 class="text-2xl font-bold text-center mb-4 text-purple-800">Request a Service</h1>
+                <form action="https://formsubmit.co/saidhadji620@gmail.com" method="POST"
+                    class="space-y-4 max-w-md mx-auto">
+
+                    <!-- حماية ضد السبام -->
                     <input type="hidden" name="_captcha" value="false">
 
-                    <input type="text" name="name" placeholder="Name" required
-                        class="h-10 border-2 border-purple-500 focus:border-purple-800 focus:outline-none focus:ring-0 font-medium p-2 rounded-sm text-purple-900">
+                    <!-- إعادة التوجيه بعد الإرسال -->
 
-                    <input type="email" name="email" placeholder="Email" required
-                        class="h-10 border-2 border-purple-500 focus:border-purple-800 focus:outline-none focus:ring-0 font-medium p-2 rounded-sm text-purple-900">
+                    <input type="text" name="name" placeholder="Your Name" required
+                        class="w-full border border-purple-300 rounded-sm px-4 py-2" />
 
-                    <textarea name="message" placeholder="What do you want ?" required
-                        class="h-[200px] sm:h-[400px] resize-none border-2 border-purple-500 focus:border-purple-800 focus:outline-none focus:ring-0 font-medium p-2 rounded-sm text-purple-900"></textarea>
+                    <input type="email" name="email" placeholder="Your Email" required
+                        class="w-full border border-purple-300 rounded-sm px-4 py-2" />
+
+                    <select name="category" required class="w-full border border-purple-300 rounded-sm px-4 py-2">
+                        <option value="">Choose Service</option>
+                        <option value="web">Web Design</option>
+                        <option value="branding">Branding</option>
+                        <option value="maintenance">Website Maintenance</option>
+                        <option value="banner">Banner</option>
+                    </select>
+
+                    <textarea name="message" placeholder="Describe your needs..." rows="10" required
+                        class="w-full border border-purple-300 rounded-sm px-4 py-2"></textarea>
 
                     <button type="submit"
-                        class="px-4 py-2 bg-purple-900 text-white font-medium rounded-sm hover:bg-purple-700 duration-300">
-                        Send
-                    </button>
+                        class="w-full bg-purple-700 text-white py-2 rounded-sm hover:bg-purple-800 transition">Send
+                        Request</button>
                 </form>
+
             </div>
         </div>
 
-        
+
     </section>
 
 
