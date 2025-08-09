@@ -34,62 +34,110 @@
                             <select name="category" required
                                 class="w-full border border-purple-300 rounded-lg px-4 py-2">
                                 <option value="">Choose Service</option>
-                                <option value="web">Web Design</option>
-                                <option value="branding">Branding</option>
-                                <option value="maintenance">Website Maintenance</option>
+                                <option value="Poster">Poster</option>
+                                <option value="Web Design">Web Design</option>
+                                <option value="Logo">Logo</option>
                                 <option value="banner">Banner</option>
+                                <option value="Visual Identity">Visual Identity</option>
+                                <option value="Thumbnail">Thumbnail</option>
                             </select>
 
                             <textarea name="message" placeholder="Describe your needs..." rows="10" required
-                                class="w-full border border-purple-300 rounded-lg px-4 py-2"></textarea>
+                                class="w-full border border-purple-300 rounded-lg px-4 py-2 max-h-[500px] min-h-[50px]"></textarea>
 
                             <button type="submit"
-                                class="w-full bg-purple-700 text-white py-2 rounded-lg hover:bg-purple-800 transition">Send
+                                class="w-full bg-purple-700 text-white py-2 rounded-lg hover:bg-purple-800 transition font-medium">Send
                                 Request</button>
+
+                            <div class="flex flex-col gap-4">
+                                <h1 class="text-center text-gray-400">---------------------- <span
+                                        class="text-black">or</span> ----------------------</h1>
+
+                                <a href="#"
+                                    class="px-4 py-2 bg-green-500 text-white rounded-lg text-center hover:bg-green-600 font-medium duration-300">Whatssap</a>
+                            </div>
                         </form>
 
                         <div
-                            class="w-[350px] sm:w-[500px] lg:w-[800px] h-[100%] p-4 flex flex-col items-center bg-purple-700 text-white">
+                            class="relative w-[350px] sm:w-[500px] lg:w-[800px] h-[100%] p-4 flex flex-col items-center bg-purple-700 text-white">
                             <div class="flex flex-col gap-4">
                                 <h1 class="text-3xl font-bold text-center mb-4 text-purple-50">Request a Service</h1>
-                                <div class="space-x-6 text-center">
-                                    <a href="#">i</a>
-                                    <a href="#">i</a>
-                                    <a href="#">i</a>
-                                    <a href="#">i</a>
-                                </div>
                             </div>
 
-                            <p class="text-justify mt-10 text-white/80">Lorem ipsum dolor sit amet, consectetur
-                                adipisicing
-                                elit. Nobis illum
-                                aut sequi, dolore
-                                necessitatibus doloribus eaque sapiente. Adipisci laboriosam amet officia inventore
-                                ducimus,
-                                qui nesciunt ipsa! Aliquid illum animi accusamus!</p>
+                            <p data-lang="en" class="text-justify mt-10 text-white/80">In this section, you can easily
+                                submit a service
+                                request through a simple form that allows you to enter your name, phone number, select
+                                the type of service you need, and provide detailed requirements. The form is designed
+                                with harmonious colors that enhance the user experience, and it includes direct WhatsApp
+                                contact options to facilitate immediate support. Next to the form, there is an
+                                informational area that clearly summarizes the requested service with a distinctive
+                                background, reflecting professionalism and clarity in communication.
+                            </p>
+
+                            <p data-lang="ar" class="text-justify mt-10 text-white/80 hidden">في هذا القسم، يمكنك تقديم طلب خدمة بسهولة من خلال
+                                نموذج بسيط يتيح لك إدخال اسمك، رقم
+                                هاتفك، اختيار نوع الخدمة التي تحتاجها، وتوضيح متطلباتك بشكل مفصل. تم تصميم النموذج
+                                بألوان متناسقة تعزز تجربة المستخدم، مع إمكانية التواصل المباشر عبر واتساب لتسهيل الحصول
+                                على الدعم الفوري. بجانب النموذج، توجد مساحة معلوماتية تلخص الخدمة المطلوبة بشكل واضح مع
+                                خلفية مميزة، مما يعكس احترافية ووضوح في التواصل.
+                            </p>
+
+                            <button id="toggleLang" data-current="en" class=" mt-4 sm:absolute sm:mb-4 sm:bottom-0 px-10 py-2 bg-purple-800 rounded-lg">ar</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="p-4 bg-purple-200 flex justify-between items-center absolute bottom-0 w-full">
-            <div class="text-center">
-                <h1 class="font-medium sm:font-bold text-[0.8rem] sm:text-[1rem]">©Copyright 2025</h1>
-                <h2 class="font-medium text-gray-600 text-[0.8rem] sm:text-[1rem]">Directed by <span
-                        class="text-black">Said Hadji</span></h2>
+        <div class="p-6 bg-gray-900 flex flex-col md:flex-row justify-between lg:items-end gap-10 md:gap-0">
+            <div class="flex flex-col gap-4">
+                <div>
+                    <h1 class="text-white font-bold text-lg lg:text-2xl">Mr. Fahed Hadji</h1>
+                    <h1 class="text-white/80 font-bold text-lg lg:text-lg">Graphic Designer & Web Designer</h1>
+                </div>
+                <div class="text-white/50 flex gap-6 text-[0.9rem] lg:text-base">
+                    <a href="#" class="hover:text-white duration-300 w-fit">Email</a>
+                    <a href="#" class="hover:text-white duration-300 w-fit">Instagram</a>
+                    <a href="#" class="hover:text-white duration-300 w-fit">Linkedin</a>
+                    <a href="#" class="hover:text-white duration-300 w-fit">Whatssap</a>
+                </div>
             </div>
 
-            <div class="text-center">
-                <a href="#" class="text-blue-900 underline text-[0.8rem] sm:text-[1rem]">saidhadji620@gmail.com</a>
-                <h1 class="font-bold text-[0.8rem] sm:text-[1rem]"><a
-                        href="https://www.instagram.com/mr_fahed_designer?igsh=MTIxOGU3OGl4anB5MQ=="
-                        class="text-blue-600"><i class="fa-brands fa-instagram"></i> mr_fahed_designer</a></h1>
+            <div class="flex flex-col gap-4 md:items-center">
+                <div class="md:text-center">
+                    <h1 class="text-white font-bold text-lg lg:text-xl">©Copyright 2025</h1>
+                    <h1 class="text-white font-bold text-lg lg:text-xl"><span class="text-white/70">Dericted by
+                        </span>Said
+                        Hadji</h1>
+                </div>
+
+                <div class="text-white/50 flex gap-6 text-[0.9rem] lg:text-base">
+                    <a href="#" class="hover:text-white duration-300 w-fit">Email</a>
+                    <a href="#" class="hover:text-white duration-300 w-fit">Linkedin</a>
+                    <a href="#" class="hover:text-white duration-300 w-fit">Discord</a>
+                </div>
             </div>
         </div>
     </section>
 
 
+
+    <script>
+        const toggleBtn = document.getElementById('toggleLang');
+
+        toggleBtn.addEventListener('click', () => {
+            const currentLang = toggleBtn.getAttribute('data-current');
+            const newLang = currentLang === 'en' ? 'ar' : 'en';
+
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                el.style.display = el.getAttribute('data-lang') === newLang ? 'block' : 'none';
+            });
+
+            toggleBtn.setAttribute('data-current', newLang);
+            toggleBtn.textContent = newLang === 'en' ? 'ar' : 'en';
+        });
+
+    </script>
 
 </body>
 
