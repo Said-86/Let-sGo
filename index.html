@@ -30,7 +30,7 @@
             </div>
 
             <div id="mobile-menu"
-                class="hidden w-full p-6 bg-white/95 backdrop:blur-sm flex-col items-center justify-center space-y-4 absolute top-full left-0 shadow-lg md:hidden">
+                class="opacity-0 pointer-events-none w-full p-6 bg-white/95 backdrop:blur-sm flex flex-col items-center justify-center space-y-4 absolute top-full left-0 shadow-lg md:hidden transition-all duration-500 ease-in-out">
                 <a href="#home" class="hover:text-purple-500 duration-300">Home</a>
                 <a href="#about" class="hover:text-purple-500 duration-300">About Me</a>
                 <a href="#skills" class="hover:text-purple-500 duration-300">Skills</a>
@@ -50,8 +50,7 @@
                     <span
                         class="bg-gradient-to-r from-purple-900 via-sky-500 to-blue-500 bg-clip-text text-transparent">The
                         Creative
-                        <span
-                            class="bg-gradient-to-tr from-orange-500 to-orange-300 bg-clip-text text-transparent">Graphic
+                        <span class="text-orange-400">Graphic
                             Designer</span> For Digital Brands</span>
                 </h1>
                 <p
@@ -81,8 +80,7 @@
                     class="max-w-lg xl:max-w-2xl min-h-[500px] flex flex-col justify-around gap-8 delay-[300ms] duration-[600ms] taos:translate-x-[-100%] taos:opacity-0">
                     <h1
                         class="text-3xl xl:text-7xl font-bold bg-gradient-to-r from-purple-900 via-sky-500 to-blue-500 bg-clip-text text-transparent">
-                        Hi, I'm <span
-                            class="bg-gradient-to-r from-orange-500 to-orange-300 bg-clip-text text-transparent">Fahed
+                        Hi, I'm <span class="text-orange-400">Fahed
                             Hadji</span></h1>
                     <h3
                         class="text-md xl:text-3xl font-medium bg-gradient-to-r from-sky-500 to-blue-500 bg-clip-text text-transparent">
@@ -96,7 +94,8 @@
                         design isn't just about looking good — it's about solving problems and communicating clearly.
                     </p>
 
-                    <p class="text-justify text-gray-700">أنا شخص شغوف وملتزم بالتفاصيل، أتمتع بحس قوي للجماليات والوظائف. مع سنوات من الخبرة في التصميم
+                    <p class="text-justify text-gray-700">أنا شخص شغوف وملتزم بالتفاصيل، أتمتع بحس قوي للجماليات
+                        والوظائف. مع سنوات من الخبرة في التصميم
                         الجرافيكي وتطوير الويب، أُحول الأفكار إلى حياة من خلال السرد البصري والتجارب الرقمية البديهية.
 
                         سواء كان بناء مواقع أنيقة، تصميم علامات تجارية مؤثرة، أو ابتكار مرئيات جذابة، أسعى لإنشاء أعمال
@@ -104,11 +103,11 @@
                         المشاكل والتواصل بوضوح.
                     </p>
 
-                    
+
                 </div>
 
                 <div class="delay-[300ms] duration-[600ms] taos:translate-x-[100%] taos:opacity-0">
-                    <img src="man.jpg" alt="" class="w-[500px] xl:w-[500px] rounded-sm shadow-md">
+                    <img src="mer.jpg" alt="" class="w-[500px] xl:w-[500px] rounded-sm shadow-md">
                 </div>
             </div>
         </div>
@@ -310,9 +309,11 @@
         const mobileMenu = document.getElementById('mobile-menu');
 
         menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-            mobileMenu.classList.toggle('flex');
+            mobileMenu.classList.toggle('opacity-0');
+            mobileMenu.classList.toggle('pointer-events-none');
         });
+
+
 
         document.addEventListener("DOMContentLoaded", function () {
             if (window.TAOS) {
