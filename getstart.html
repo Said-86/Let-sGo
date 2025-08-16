@@ -30,7 +30,7 @@
 
                             <div class="flex flex-col h-[100%] justify-between p-4 gap-8">
                                 <div>
-                                    <h1 class="text-center font-bold sm:text-lg">📄 Al-Bremel for Improvement Services
+                                    <h1 class="text-center font-bold sm:text-lg">📄 Bremel for Improvement Services
                                     </h1>
                                 </div>
 
@@ -46,16 +46,22 @@
                                                 class="text-black">or</span> ------------------</h1>
                                     </div>
 
-                                    <div class="gap-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5">
+                                    <div class="gap-5 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+                                        <!-- Full Name -->
+
                                         <input type="text" name="name" placeholder="Full Name" required
                                             class="w-full border border-purple-300 rounded-lg px-4 py-2" />
+                                        <!-- Company -->
 
                                         <input type="text" name="text" placeholder="Company" required
                                             class="w-full border border-purple-300 rounded-lg px-4 py-2" />
 
+
+                                        <!-- Sector or field -->
+
                                         <select name="category" required
                                             class="w-full border border-purple-300 rounded-lg px-4 py-2">
-                                            <option value="">Sector or field</option>
+                                            <option value="" class="font-medium">Sector or field</option>
                                             <!-- 1 -->
                                             <optgroup label="1. Trade & Business">
                                                 <option value="E-commerce" class="text-gray-600">E-commerce</option>
@@ -113,30 +119,97 @@
                                                 <option value="Fitness & Physiotherapy" class="text-gray-600">
                                                     Fitness & Physiotherapy</option>
                                             </optgroup>
+                                            <!-- 5 -->
+                                            <optgroup label="5. Fashion & Beauty">
+                                                <option value="Clothing" class="text-gray-600">Clothing
+                                                </option>
+                                                <option value="Accessories" class="text-gray-600">Accessories
+                                                </option>
+                                                <option value="Cosmetics" class="text-gray-600">Cosmetics
+                                                </option>
+                                                <option value="Perfumes" class="text-gray-600">Perfumes
+                                                </option>
+                                                <option value="Hairdressing" class="text-gray-600">
+                                                    Hairdressing</option>
+                                            </optgroup>
+                                            <!-- 6 -->
+                                            <optgroup label="6. Food & Beverages">
+                                                <option value="Restaurants" class="text-gray-600">Restaurants
+                                                </option>
+                                                <option value="Cafés" class="text-gray-600">Cafés
+                                                </option>
+                                                <option value="Bakery & Sweets" class="text-gray-600">Bakery & Sweets
+                                                </option>
+                                                <option value="Food Products" class="text-gray-600">Food Products
+                                                </option>
+                                                <option value="Food Delivery" class="text-gray-600">
+                                                    Food Delivery</option>
+                                            </optgroup>
+                                            <!-- 7 -->
+                                            <optgroup label="7. Tourism & Travel">
+                                                <option value="Hotels" class="text-gray-600">Hotels
+                                                </option>
+                                                <option value="Travel Agencies" class="text-gray-600">Travel Agencies
+                                                </option>
+                                                <option value="Tour Services" class="text-gray-600">Tour Services
+                                                </option>
+                                                <option value="Car Rental" class="text-gray-600">Car Rental
+                                                </option>
+                                                <option value="Airlines" class="text-gray-600">
+                                                    Airlines</option>
+                                            </optgroup>
+                                            <!-- 8 -->
+                                            <optgroup label="8. Media & Arts">
+                                                <option value="Photography" class="text-gray-600">Photography
+                                                </option>
+                                                <option value="Video Production" class="text-gray-600">Video Production
+                                                </option>
+                                                <option value="Graphic Design" class="text-gray-600">Graphic Design
+                                                </option>
+                                                <option value="Music" class="text-gray-600">Music
+                                                </option>
+                                                <option value="Publishing & Printing" class="text-gray-600">
+                                                    Publishing & Printing</option>
+                                                <!-- Other option -->
+                                                <option value="other" class="font-medium">Other</option>
+                                            </optgroup>
                                         </select>
+
+                                        <!-- Company Location -->
 
                                         <input type="text" name="text" placeholder="Company Location" required
                                             class="w-full border border-purple-300 rounded-lg px-4 py-2" />
 
+                                        <!-- Phone -->
+
                                         <input type="text" name="text" placeholder="Phone" required
                                             class="w-full border border-purple-300 rounded-lg px-4 py-2" />
+
+                                        <!-- Email -->
 
                                         <input type="text" name="Email" placeholder="Email" required
                                             class="w-full border border-purple-300 rounded-lg px-4 py-2" />
 
+                                        <!-- Social media username -->
+
                                         <input type="text" name="text" placeholder="Social media username" required
                                             class="w-full border border-purple-300 rounded-lg px-4 py-2" />
 
+                                        <!-- Choose Service -->
+
                                         <select name="category" required
                                             class="w-full border border-purple-300 rounded-lg px-4 py-2">
-                                            <option value="">Choose Service</option>
+                                            <option value="" class="font-medium">Choose Service</option>
+
                                             <option value="Poster">Poster</option>
                                             <option value="Web Design">Web Design</option>
                                             <option value="Logo">Logo</option>
                                             <option value="banner">Banner</option>
                                             <option value="Visual Identity">Visual Identity</option>
                                             <option value="Thumbnail">Thumbnail</option>
-                                            <option value="other">Other</option>
+                                            <option value="Print Design">Print Design</option>
+                                            <!-- Other option -->
+                                            <option value="other" class="font-medium">Other</option>
                                         </select>
 
                                         <input type="text" name="text" placeholder="Number of designs required" required
@@ -144,36 +217,148 @@
 
                                         <select name="category" required
                                             class="w-full border border-purple-300 rounded-lg px-4 py-2">
-                                            <option value="">Dimensions and sizes</option>
+                                            <option value="" class="font-medium">Dimensions and sizes</option>
                                             <!-- 1 -->
                                             <optgroup label="1. Social Media">
-                                                <option value="instagram_square" class="text-gray-600">Instagram Post: 1080×1080 px (square)</option>
-                                                <option value="instagram_vertical" class="text-gray-600">Instagram Story / Reels: 1080×1920 px (vertical)
+                                                <option value="instagram_square" class="text-gray-600">Instagram Post:
+                                                    1080×1080 px (square)</option>
+                                                <option value="instagram_vertical" class="text-gray-600">Instagram Story
+                                                    / Reels: 1080×1920 px (vertical)
                                                 </option>
-                                                <option value="facebook_cover_photo" class="text-gray-600">Facebook Cover Photo: 820×312 px</option>
-                                                <option value="youtub_thumbnail" class="text-gray-600">YouTube Thumbnail: 1280×720 px</option>
+                                                <option value="facebook_cover_photo" class="text-gray-600">Facebook
+                                                    Cover Photo: 820×312 px</option>
+                                                <option value="youtub_thumbnail" class="text-gray-600">YouTube
+                                                    Thumbnail: 1280×720 px</option>
                                                 <option value="tiktok_video">TikTok Video: 1080×1920 px</option>
                                             </optgroup>
                                             <!-- 2 -->
                                             <optgroup label="2. Web (Banners & Ads)">
-                                                <option value="Large Website Banner (Hero Section)" class="text-gray-600">Large Website Banner (Hero Section): 1920×1080 px</option>
-                                                <option value="instagram_vertical" class="text-gray-600">Instagram Story
-                                                    / Reels: 1080×1920
+                                                <option value="Large Website Banner (Hero Section): 1920×1080 px"
+                                                    class="text-gray-600">Large Website Banner (Hero Section): 1920×1080
+                                                    px</option>
+                                                <option value="Sidebar Banner: 300×600 px" class="text-gray-600">Sidebar
+                                                    Banner: 300×600 px
                                                 </option>
-                                                <option value="facebook_cover_photo" class="text-gray-600">FB Cover
-                                                    Photo: 820×312</option>
-                                                <option value="youtub_thumbnail" class="text-gray-600">YT Thumbnail:
-                                                    1280×720</option>
-                                                <option value="tiktok_video" class="text-gray-600">TikTok Video: 1080×1920</option>
-                                                <option value="Large_website_banner" class="text-gray-600">Large Website
-                                                    Banner: 1920×1080
+                                                <option value="Google Ads Leaderboard: 728×90 px" class="text-gray-600">
+                                                    Google Ads Leaderboard: 728×90 px</option>
+                                                <option value="Google Ads Square: 250×250 px" class="text-gray-600">
+                                                    Google Ads Square: 250×250 px</option>
+                                                <option value="Favicon: 32×32 px" class="text-gray-600">Favicon: 32×32
+                                                    px</option>
+                                            </optgroup>
+                                            <!-- 3 -->
+                                            <optgroup label="3. Print">
+                                                <option value="Business Card: 90×50 mm (or 3.5×2 inches)"
+                                                    class="text-gray-600">Business Card: 90×50 mm (or 3.5×2 inches)
                                                 </option>
-                                                <option value="Sidebar_banner" class="text-gray-600">Sidebar Banner:
-                                                    300×600 px</option>
+                                                <option value="Small Poster: A4 (210×297 mm)" class="text-gray-600">
+                                                    Small Poster: A4 (210×297 mm)
+                                                </option>
+                                                <option value="Medium Poster: A3 (297×420 mm)" class="text-gray-600">
+                                                    Medium Poster: A3 (297×420 mm)</option>
+                                                <option value="Large Banner: 100×200 cm or larger depending on need"
+                                                    class="text-gray-600">Large Banner: 100×200 cm or larger depending
+                                                    on need</option>
+                                                <option value="Magazine Cover: A4" class="text-gray-600">Magazine Cover:
+                                                    A4</option>
+                                                <!-- Other option -->
+                                                <option value="other" class="font-medium">Other</option>
                                             </optgroup>
                                         </select>
 
+                                        <!-- Submission deadline -->
+                                        <input type="text" name="text" placeholder="Submission deadline" required
+                                            class="w-full border border-purple-300 rounded-lg px-4 py-2" />
 
+
+                                        <!-- The goal of the design -->
+                                        <select name="category" required
+                                            class="w-full border border-purple-300 rounded-lg px-4 py-2">
+                                            <option value="" class="font-medium">The goal of the design</option>
+
+                                            <option value="Increase sales">Increase sales</option>
+                                            <option value="Build a professional image">Build a professional image
+                                            </option>
+                                            <option value="Launch a new product">Launch a new product</option>
+                                            <option value="Advertising or promotional campaign">Advertising or
+                                                promotional campaign</option>
+                                            <option value="Attract new customers">Attract new customers</option>
+                                            <option value="Retain existing customers">Retain existing customers</option>
+                                            <option value="Strengthen brand identity">Strengthen brand identity</option>
+                                            <option value="Increase brand awareness">Increase brand awareness</option>
+                                            <option value="Stand out from competitors">Stand out from competitors
+                                            </option>
+                                            <option value="Social media marketing">Social media marketing</option>
+                                            <option value="Promote offers or discounts">Promote offers or discounts
+                                            </option>
+                                            <option value="Event or conference promotion">Event or conference promotion
+                                            </option>
+                                            <option value="Target a specific audience">Target a specific audience
+                                            </option>
+                                            <option value="Highlight a feature or service">Highlight a feature or
+                                                service</option>
+                                            <!-- Other option -->
+                                            <option value="" class="font-medium">Other</option>
+                                        </select>
+
+                                        <!-- -->
+                                        <textarea name="" id=""
+                                            placeholder="Target audience: (age, interests, geographic location...)"
+                                            class="w-full border border-purple-300 rounded-lg p-2 resize-none h-[85px]"></textarea>
+
+                                        <!-- -->
+                                        <textarea name="" id=""
+                                            placeholder="Main message or idea: (What is meant to be conveyed to people through the design?)"
+                                            class="w-full border border-purple-300 rounded-lg p-2 resize-none h-[85px]"></textarea>
+
+                                        <!-- Do you have a previous visual identity? Yes / No -->
+                                        <textarea name="" id=""
+                                            placeholder="Do you have a previous visual identity? Yes / No"
+                                            class="w-full border border-purple-300 rounded-lg p-2 resize-none h-[85px]"></textarea>
+
+                                        <!-- Favorite colours -->
+                                        <textarea name="" id=""
+                                            placeholder="Favorite colours"
+                                            class="w-full border border-purple-300 rounded-lg p-2 resize-none h-[85px]"></textarea>
+
+                                        <!-- Colors to avoid -->
+                                        <textarea name="" id=""
+                                            placeholder="Colors to avoid"
+                                            class="w-full border border-purple-300 rounded-lg p-2 resize-none h-[85px]"></textarea>
+
+                                        <!-- Favorite fonts -->
+                                        <textarea name="" id=""
+                                            placeholder="Favorite fonts"
+                                            class="w-full border border-purple-300 rounded-lg p-2 resize-none h-[85px]"></textarea>
+
+                                        <!-- -->
+                                        <textarea name="" id=""
+                                            placeholder="Preferred style (modern, classic, minimal, luxurious, youthful…)"
+                                            class="w-full border border-purple-300 rounded-lg p-2 resize-none h-[85px]"></textarea>
+
+                                        <!-- -->
+                                        <textarea name="" id="" placeholder="Desired symbols or elements in the design"
+                                            class="w-full border border-purple-300 rounded-lg p-2 resize-none h-[85px]"></textarea>
+
+                                        <!-- Elements to avoid in design -->
+                                        <textarea name="" id=""
+                                            placeholder="Elements to avoid in design"
+                                            class="w-full border border-purple-300 rounded-lg p-2 resize-none h-[85px]"></textarea>
+
+                                        <!-- Brand Colors: (HEX or RGB codes if present) -->
+                                        <textarea name="" id=""
+                                            placeholder="Brand Colors: (HEX or RGB codes if present)"
+                                            class="w-full border border-purple-300 rounded-lg p-2 resize-none h-[85px]"></textarea>
+
+                                        <!-- Current company logo: (if available) -->
+                                        <textarea name="" id=""
+                                            placeholder="Current company logo: (if available)"
+                                            class="w-full border border-purple-300 rounded-lg p-2 resize-none h-[85px]"></textarea>
+
+                                        <!-- Main texts: (titles, description, advertising slogans...) -->
+                                        <textarea name="" id=""
+                                            placeholder="Main texts: (titles, description, advertising slogans...)"
+                                            class="w-full border border-purple-300 rounded-lg p-2 resize-none h-[85px]"></textarea>
                                     </div>
 
                                     <button type="submit"
@@ -224,22 +409,7 @@
 
 
 
-    <script>
-        const toggleBtn = document.getElementById('toggleLang');
 
-        toggleBtn.addEventListener('click', () => {
-            const currentLang = toggleBtn.getAttribute('data-current');
-            const newLang = currentLang === 'en' ? 'ar' : 'en';
-
-            document.querySelectorAll('[data-lang]').forEach(el => {
-                el.style.display = el.getAttribute('data-lang') === newLang ? 'block' : 'none';
-            });
-
-            toggleBtn.setAttribute('data-current', newLang);
-            toggleBtn.textContent = newLang === 'en' ? 'ar' : 'en';
-        });
-
-    </script>
 
 </body>
 
